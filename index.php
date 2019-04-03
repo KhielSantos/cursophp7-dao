@@ -33,10 +33,21 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+//update do usuario
 $usuario = new Usuario();
 $usuario->loadById(5);
 
 $usuario->update("Patricia Ramos", "78903");
+
+echo $usuario;
+*/
+
+
+$usuario = new Usuario();
+$usuario->loadById(5);
+
+$usuario->delete();
 
 echo $usuario;
 
